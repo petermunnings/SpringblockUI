@@ -10451,33 +10451,6 @@ const Home = () => __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 		__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 			'span',
 			null,
-			'Please select a blockchain\xA0\xA0'
-		),
-		__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-			'span',
-			null,
-			__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-				'select',
-				null,
-				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-					'option',
-					null,
-					'Test blockchain'
-				),
-				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-					'option',
-					null,
-					'Ethereum (Quorum)'
-				)
-			)
-		)
-	),
-	__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-		'div',
-		null,
-		__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-			'span',
-			null,
 			'Url of Rest Services\xA0\xA0'
 		),
 		__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -10490,6 +10463,20 @@ const Home = () => __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 		'div',
 		null,
 		'----'
+	),
+	__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+		'div',
+		null,
+		__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+			'span',
+			null,
+			'Blockchain technology\xA0\xA0'
+		),
+		__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+			'span',
+			null,
+			'Test Blockchain'
+		)
 	),
 	__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 		'div',
