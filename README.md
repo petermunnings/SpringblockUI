@@ -8,7 +8,6 @@ In order to get it running:
 1. Clone the poject
 2. cd to the Project folder
 3. do an npm install
-4. run `webpack` to build
-5. npm start
+4. npm start
 
 
