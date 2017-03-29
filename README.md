@@ -1,5 +1,5 @@
 # SpringblockUI
-A standard UI for the Springblock blockchain networks to allow trading across multiple blockchain technologies
+A standard UI for the Springblock blockchain networks to allow issuance and trading from a common interface.  This will allow a simple comparison of the performance and functionality of multiple blockchain technologies
 
 This is a temporary repository so that a few people can work on getting it up and running before we move it to the main repository on the Springblock project
 
