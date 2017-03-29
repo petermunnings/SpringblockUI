@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { getBlockchainConfig } from '../actions/blockchainConfig';
+import NavBar from './NavBar';
 
 class BlockchainConfig extends Component {
 	componentDidMount() {
@@ -9,15 +10,26 @@ class BlockchainConfig extends Component {
 
 	render() {
 		if (this.props.hasErrored) {
-			return <p>Sorry! There was an error loading the Config</p>;
+			return ( 
+				<div>
+					<NavBar />
+					<p>Sorry! There was an error loading the Config</p>;
+				</div>
+			);
 		}
 
 		if (this.props.isLoading) {
-			return <p>Loading…</p>;
+			return ( 
+				<div>
+					<NavBar />
+					<p>Loading…</p>;
+				</div>
+			);
 		}
 
 		return (
 			<div>
+				<NavBar />
 				<p>Blockchain Type: {this.props.blockchainType}</p>
 				<p>Organisation Name: {this.props.organisationName}</p>
 			</div>
