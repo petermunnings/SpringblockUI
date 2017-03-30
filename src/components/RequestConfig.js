@@ -2,41 +2,23 @@ import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { getBlockchainConfig } from '../actions/blockchainConfig';
 import NavBar from './NavBar';
-import RequestConfig from './RequestConfig';
 
-class BlockchainConfig extends Component {
+class RequestConfig extends Component {
+	fetchConfig() {
+		this.props.fetchData('http://localhost:8081/getConfig'); //This need to move to an input text box
+	}
+
 	render() {
-		if (this.props.hasErrored) {
-			return ( 
-				<div>
-					<NavBar />
-					<RequestConfig />
-					<p>Sorry! There was an error loading the Config</p>;
-				</div>
-			);
-		}
-
-		if (this.props.isLoading) {
-			return ( 
-				<div>
-					<NavBar />
-					<p>Loading…</p>;
-				</div>
-			);
-		}
-
 		return (
 			<div>
-				<NavBar />
-				<RequestConfig />
-				<p>Blockchain Type: {this.props.blockchainType}</p>
-				<p>Organisation Name: {this.props.organisationName}</p>
+				Please enter the address of the blockchain api endpoint: <input type='text' value='http://localhost:8081/getConfig' />
+				<button onClick={this.fetchConfig.bind(this)}>Click to load configuration</button>
 			</div>
 		);
 	}
 }
 
-BlockchainConfig.propTypes = {
+RequestConfig.propTypes = {
 		fetchData: PropTypes.func.isRequired,
 		blockchainType: PropTypes.string.isRequired,
 		organisationName: PropTypes.string.isRequired,
@@ -59,4 +41,4 @@ const mapDispatchToProps = (dispatch) => {
 	};
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(BlockchainConfig);
+export default connect(mapStateToProps, mapDispatchToProps)(RequestConfig);
