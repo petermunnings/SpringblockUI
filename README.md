@@ -13,7 +13,8 @@ In order to get it running:
 ## Start the test api
 
 1. cd test_api
-2. npm start
+2. npm install
+3. npm start
 
 ## Start the main project
 
